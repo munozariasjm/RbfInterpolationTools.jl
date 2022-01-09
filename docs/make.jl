@@ -1,24 +1,27 @@
 using RbfInterpolationTools
 using Documenter
 
-DocMeta.setdocmeta!(RbfInterpolationTools, :DocTestSetup, :(using RbfInterpolationTools); recursive=true)
+DocMeta.setdocmeta!(RbfInterpolationTools, :DocTestSetup, :(using RbfInterpolationTools); recursive = true)
 
 makedocs(;
-    modules=[RbfInterpolationTools],
-    authors="munozariasjm <munozariasjm@hotmail.com> and contributors",
-    repo="https://github.com/munozariasjm/RbfInterpolationTools.jl/blob/{commit}{path}#{line}",
-    sitename="RbfInterpolationTools.jl",
-    format=Documenter.HTML(;
-        prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://munozariasjm.github.io/RbfInterpolationTools.jl",
-        assets=String[],
+    modules = [RbfInterpolationTools],
+    authors = "munozariasjm <munozariasjm@hotmail.com> and contributors",
+    repo = "https://github.com/munozariasjm/RbfInterpolationTools.jl/blob/{commit}{path}#{line}",
+    sitename = "RbfInterpolationTools.jl",
+    format = Documenter.HTML(;
+        prettyurls = get(ENV, "CI", "false") == "true",
+        canonical = "https://munozariasjm.github.io/RbfInterpolationTools.jl",
+        assets = String[]
     ),
-    pages=[
+    pages = [
         "Home" => "index.md",
-    ],
+        "Examples" => "examples.md",
+        "Available Kernels" => "kernels.md",
+        "Useful References" => "references.md"
+    ]
 )
 
 deploydocs(;
-    repo="github.com/munozariasjm/RbfInterpolationTools.jl",
-    devbranch="main",
+    repo = "github.com/munozariasjm/RbfInterpolationTools.jl",
+    devbranch = "main"
 )

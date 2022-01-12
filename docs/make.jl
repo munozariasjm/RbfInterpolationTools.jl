@@ -6,7 +6,7 @@ DocMeta.setdocmeta!(RbfInterpolationTools, :DocTestSetup, :(using RbfInterpolati
 makedocs(;
     modules = [RbfInterpolationTools],
     authors = "munozariasjm <munozariasjm@hotmail.com> and contributors",
-    repo = "https://github.com/munozariasjm/RbfInterpolationTools.jl/blob/{commit}{path}#{line}",
+    repo = "https://github.com/munozariasjm/RbfInterpolationTools.jl",
     sitename = "RbfInterpolationTools.jl",
     format = Documenter.HTML(;
         prettyurls = get(ENV, "CI", "false") == "true",

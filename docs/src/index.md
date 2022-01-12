@@ -56,9 +56,6 @@ julia> new_vs = RbfInterpolationTools.interpolateMesh(inter, new_ts)
 
 ```
 
-```@index
-```
-
 ```@autodocs
 Modules = [RbfInterpolationTools]
 ```
